@@ -97,7 +97,7 @@ ul{
         padding:0 2rem;
         position: fixed;
         right: -300px;
-        bottom: 4rem;
+        bottom: 3rem;
         display: flex;
         flex-direction: column;
         transition: .8s ease;
