@@ -81,7 +81,10 @@ ul{
         transition: .8s ease;
     }
    .item{
-       display: initial;
+       display: flex;
+       height: 60vh;
+       flex-direction: column;
+       justify-content: space-between;
        position: initial;
      
    }
