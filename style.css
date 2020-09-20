@@ -1,0 +1,134 @@
+/* global classes */
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: brown;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+ 
+ /* nav bar design start here */
+ .home{
+     width: 100%;
+     height: 100vh;
+     background-image: url(./1.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .navbar{
+     width: 95vw;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.5rem ;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.item-menu{
+
+    transition: .8s ease;
+}
+.item{
+    display: flex;
+}
+
+.nav-link{
+    
+    padding:0 1rem;
+}
+.log{
+     right: 1rem;
+    transition: .8s ease;
+}
+.log a{
+    padding: 1rem;
+}
+
+
+/* media query for 840 screen size or less */
+@media screen and (max-width:840px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        padding :1rem;
+        font-size: 1.5rem;
+       position: fixed;
+    }
+   
+    .item-menu{
+       background-color: cadetblue;
+       height: 90vh;
+        position:fixed;
+        top: 3rem;
+        right: -300px;
+        text-align: center;
+        font-size: 1rem;
+        padding: 2rem;
+        border-radius: 20px 0 0 20px;
+        transition: .8s ease;
+    }
+   .item{
+       display: initial;
+       position: initial;
+     
+   }
+    .nav-link{
+        
+        padding:1rem;
+    }
+    .log{
+        font-size: 1rem;
+        padding:0 2rem;
+        position: fixed;
+        right: -300px;
+        bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        transition: .8s ease;
+    }
+    .log a{
+        padding: 1rem;
+    }
+    .change{
+       right:0;
+   }
+   .ham{
+       width: 35px;
+       height: 30px;
+       position: fixed;
+       top: 1rem;
+       right: 1rem;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+       cursor: pointer;
+   }
+   .ham .line{
+       width: 100%;
+       height: 4px;
+       background-color: brown;
+       transition: .8s ease;
+   }
+   .change .lineone{
+       transform: rotateZ(405deg) translate(8px,6px);
+   }
+   .change .linetwo{
+       opacity: 0;
+   }
+   .change .linethree{
+       transform: rotateZ(-405deg) translate(8px,-6px);
+   }
+}
